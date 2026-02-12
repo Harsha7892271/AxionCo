@@ -2,249 +2,191 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AxionCo — Digital Growth Agency</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AxionCo - Strategic Growth & Automation</title>
     <meta name="description"
-        content="AxionCo is a premium digital agency specializing in branding, content creation, social media management, and growth systems." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+        content="Founder-led strategic growth through social media and intelligent automation systems.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <!-- ===== SECTION 1 — INTRO SCREEN ===== -->
-    <section id="intro" class="intro">
-        <div class="intro__logo-wrap">
-            <h1 class="intro__logo" aria-label="AxionCo">
-                <span class="letter">A</span><span class="letter">x</span><span class="letter">i</span><span
-                    class="letter">o</span><span class="letter">n</span><span class="letter">C</span><span
-                    class="letter">o</span>
-            </h1>
-            <p class="intro__tagline">Digital Growth Agency</p>
+    <!-- SECTION 1 - HEADER (Sticky) -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-grid">
+                <div class="logo">
+                    <h1>AxionCo</h1>
+                </div>
+                <nav class="main-nav">
+                    <a href="#social-media">Social Media Growth</a>
+                    <a href="#crm-automation">CRM & Automation</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-        <!-- Hero ambient glow layer -->
-        <div class="intro__ambient-glow" aria-hidden="true"></div>
-        <div class="scroll-cue" aria-hidden="true">
-            <span class="scroll-cue__dot"></span>
-        </div>
-    </section>
-
-    <!-- ===== SECTION 2 — STICKY HEADER ===== -->
-    <header id="site-header" class="site-header">
-        <a href="#intro" class="header__brand">AxionCo</a>
-        <nav class="header__nav" aria-label="Main navigation">
-            <a href="#hero" class="nav-link">About</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#growth" class="nav-link">Growth</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </nav>
-        <button class="header__menu-btn" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
     </header>
 
-    <!-- ===== SECTION 3 — HERO STATEMENT ===== -->
-    <section id="hero" class="hero">
-        <!-- floating abstract shapes -->
-        <div class="hero__shapes" aria-hidden="true">
-            <div class="shape shape--circle"></div>
-            <div class="shape shape--ring"></div>
-            <div class="shape shape--dot"></div>
-            <div class="shape shape--square"></div>
-        </div>
-        <div class="container">
-            <h2 class="hero__heading reveal-lines">
-                <span class="reveal-line">Building Brands</span>
-                <span class="reveal-line">That Move Forward.</span>
-            </h2>
+    <!-- SECTION 2 - HERO (Full Viewport) -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-headline">Transform Your Brand Into a Growth Engine</h1>
+            <p class="hero-subheadline">I help ambitious founders build authentic audiences and automate what slows them
+                down. Strategic, hands-on growth without the agency bloat.</p>
+            <div class="hero-ctas">
+                <a href="#contact" class="btn btn-primary">Start Your Growth</a>
+                <a href="#how-we-work" class="btn btn-secondary">How We Work</a>
+            </div>
         </div>
     </section>
 
-    <!-- ===== SECTION 4 — SERVICES PHASE 1 ===== -->
-    <section id="services" class="services">
-        <!-- Node pulse background canvas -->
-        <canvas class="services__node-canvas" aria-hidden="true"></canvas>
+    <!-- SECTION 3 - OFFER PREVIEW 1 (Social Media Growth) -->
+    <section id="social-media" class="offer-section offer-layout-left">
         <div class="container">
-            <h2 class="section-title reveal-up">Our Services</h2>
-            <div class="card-grid">
-
-                <!-- Card 1 -->
-                <div class="card reveal-up" data-delay="0">
-                    <div class="card__icon floating">
-                        <!-- Social Media icon -->
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="8" y="8" width="48" height="48" rx="12" stroke="currentColor" stroke-width="2" />
-                            <circle cx="22" cy="26" r="4" stroke="currentColor" stroke-width="2" />
-                            <circle cx="42" cy="26" r="4" stroke="currentColor" stroke-width="2" />
-                            <circle cx="32" cy="42" r="4" stroke="currentColor" stroke-width="2" />
-                            <line x1="25.5" y1="28" x2="29.5" y2="39" stroke="currentColor" stroke-width="1.5" />
-                            <line x1="38.5" y1="28" x2="34.5" y2="39" stroke="currentColor" stroke-width="1.5" />
-                            <line x1="26" y1="26" x2="38" y2="26" stroke="currentColor" stroke-width="1.5" />
-                        </svg>
-                    </div>
-                    <h3 class="card__title">Social Media Management</h3>
-                    <p class="card__desc">Strategic content planning, community engagement, and data-driven growth
-                        across every platform.</p>
+            <div class="offer-grid">
+                <div class="offer-text">
+                    <span class="offer-label">Service 01</span>
+                    <h2>Social Media Growth That Actually Converts</h2>
+                    <p>Stop posting into the void. I build content systems that attract your ideal customers, spark real
+                        conversations, and turn followers into revenue.</p>
+                    <a href="social-media.html" class="btn btn-primary">Explore This Service</a>
                 </div>
-
-                <!-- Card 2 -->
-                <div class="card reveal-up" data-delay="1">
-                    <div class="card__icon floating">
-                        <!-- Video Editing icon -->
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="6" y="14" width="52" height="36" rx="6" stroke="currentColor" stroke-width="2" />
-                            <polygon points="26,24 26,40 42,32" stroke="currentColor" stroke-width="2" fill="none" />
-                        </svg>
+                <div class="offer-visual">
+                    <div class="visual-grid">
+                        <div class="visual-item visual-large"></div>
+                        <div class="visual-item visual-small"></div>
+                        <div class="visual-item visual-small"></div>
                     </div>
-                    <h3 class="card__title">Video Editing</h3>
-                    <p class="card__desc">Cinematic edits powered by industry-leading tools for scroll-stopping content.
-                    </p>
-                    <div class="card__badges">
-                        <img src="addonns/logos for video editing.png" alt="Premiere Pro & After Effects"
-                            class="badge-logo" />
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="card reveal-up" data-delay="2">
-                    <div class="card__icon floating">
-                        <!-- Content Creation icon -->
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 50 L14 14 L40 14 L50 24 L50 50 Z" stroke="currentColor" stroke-width="2" />
-                            <polyline points="40,14 40,24 50,24" stroke="currentColor" stroke-width="2" fill="none" />
-                            <line x1="22" y1="32" x2="42" y2="32" stroke="currentColor" stroke-width="1.5" />
-                            <line x1="22" y1="38" x2="38" y2="38" stroke="currentColor" stroke-width="1.5" />
-                            <line x1="22" y1="44" x2="34" y2="44" stroke="currentColor" stroke-width="1.5" />
-                        </svg>
-                    </div>
-                    <h3 class="card__title">Content Creation</h3>
-                    <p class="card__desc">Compelling copy, visuals, and stories that resonate with your audience and
-                        amplify your voice.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== SECTION 5 — SERVICES PHASE 2 ===== -->
-    <section id="growth" class="growth">
+    <!-- SECTION 4 - OFFER PREVIEW 2 (CRM & Automation) -->
+    <section id="crm-automation" class="offer-section offer-layout-right">
         <div class="container">
-            <h2 class="section-title reveal-up">Growth Systems</h2>
-            <div class="card-grid">
-
-                <!-- Card 1 -->
-                <div class="card reveal-slide" data-dir="left" data-delay="0">
-                    <div class="card__icon floating">
-                        <!-- CRM icon -->
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="32" cy="20" r="8" stroke="currentColor" stroke-width="2" />
-                            <path d="M16 48 C16 36 48 36 48 48" stroke="currentColor" stroke-width="2" fill="none" />
-                            <circle cx="50" cy="18" r="5" stroke="currentColor" stroke-width="1.5" />
-                            <path d="M44 38 C48 34 56 34 56 38" stroke="currentColor" stroke-width="1.5" fill="none" />
-                        </svg>
+            <div class="offer-grid">
+                <div class="offer-visual">
+                    <div class="visual-grid">
+                        <div class="visual-item visual-dashboard"></div>
                     </div>
-                    <h3 class="card__title">CRM Management</h3>
-                    <p class="card__desc">Streamlined customer pipelines that nurture leads and turn conversations into
-                        conversions.</p>
                 </div>
-
-                <!-- Card 2 -->
-                <div class="card reveal-slide" data-dir="right" data-delay="1">
-                    <div class="card__icon floating">
-                        <!-- D2C Branding icon -->
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="12" y="18" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2" />
-                            <circle cx="32" cy="32" r="8" stroke="currentColor" stroke-width="2" />
-                            <path d="M28 32 L32 28 L36 32 L32 36 Z" stroke="currentColor" stroke-width="1.5" />
-                            <line x1="32" y1="10" x2="32" y2="18" stroke="currentColor" stroke-width="1.5" />
-                            <circle cx="32" cy="10" r="3" stroke="currentColor" stroke-width="1.5" />
-                        </svg>
-                    </div>
-                    <h3 class="card__title">D2C Branding</h3>
-                    <p class="card__desc">End-to-end direct-to-consumer brand strategy that connects products to people.
-                    </p>
-                </div>
-
-                <!-- Card 3 — Automations -->
-                <div class="card card--automations reveal-slide" data-dir="left" data-delay="2">
-                    <div class="card__icon floating">
-                        <!-- Automations icon -->
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="32" r="6" stroke="currentColor" stroke-width="2" />
-                            <circle cx="48" cy="20" r="6" stroke="currentColor" stroke-width="2" />
-                            <circle cx="48" cy="44" r="6" stroke="currentColor" stroke-width="2" />
-                            <line x1="22" y1="30" x2="42" y2="22" stroke="currentColor" stroke-width="1.5"
-                                class="conn-line" />
-                            <line x1="22" y1="34" x2="42" y2="42" stroke="currentColor" stroke-width="1.5"
-                                class="conn-line" />
-                            <line x1="48" y1="26" x2="48" y2="38" stroke="currentColor" stroke-width="1.5"
-                                class="conn-line" />
-                        </svg>
-                    </div>
-                    <h3 class="card__title">Automations</h3>
-                    <p class="card__desc">Intelligent workflows and integrations that run your growth engine on
-                        autopilot.</p>
-                    <!-- subtle connection-line animation canvas overlay -->
-                    <canvas class="automations-canvas" aria-hidden="true"></canvas>
+                <div class="offer-text">
+                    <span class="offer-label">Service 02</span>
+                    <h2>Automation That Scales Your Impact</h2>
+                    <p>Reclaim 15+ hours per week. I design smart systems that nurture leads, automate follow-ups, and
+                        handle busywork while you focus on growth.</p>
+                    <a href="crm-automation.html" class="btn btn-primary">Explore This Service</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== SECTION 6 — CTA CONTACT FORM ===== -->
-    <section id="contact" class="contact">
-        <!-- CTA radial glow pulse -->
-        <div class="contact__glow" aria-hidden="true"></div>
+    <!-- SECTION 5 - HOW WE WORK -->
+    <section id="how-we-work" class="process-section">
         <div class="container">
-            <h2 class="section-title reveal-up">Let's Build Your Brand</h2>
-            <form class="contact__form" id="contact-form" action="#" method="POST">
-                <div class="form-field reveal-up" data-delay="0">
-                    <label for="brand-name">Brand Name</label>
-                    <input type="text" id="brand-name" name="brand_name" placeholder="Your brand name" required />
+            <h2 class="section-title">How We Work</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Discovery</h3>
+                    <p>Deep-dive into your business model, audience, and current systems. I identify what's working,
+                        what's broken, and where the biggest opportunities hide.</p>
                 </div>
-                <div class="form-field reveal-up" data-delay="1">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" required />
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Strategy</h3>
+                    <p>Custom roadmap built for your goals. Clear milestones, content frameworks, and automation
+                        blueprints—no cookie-cutter templates, just what works for you.</p>
                 </div>
-                <div class="form-field reveal-up" data-delay="2">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Execution</h3>
+                    <p>I roll up my sleeves and build with you. Launch campaigns, implement systems, create content—with
+                        weekly check-ins to keep momentum high.</p>
                 </div>
-                <div class="form-field reveal-up" data-delay="3">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your vision…"></textarea>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Optimization</h3>
+                    <p>Track what matters, cut what doesn't. Continuous testing and refinement based on real data—not
+                        vanity metrics—to compound your results.</p>
                 </div>
-                <button type="submit" class="btn-primary reveal-up" data-delay="4">
-                    <span>Start Your Growth</span>
-                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M13 6l6 6-6 6" />
-                    </svg>
-                </button>
-            </form>
+            </div>
         </div>
     </section>
 
-    <!-- ===== SECTION 7 — FOOTER ===== -->
-    <footer id="footer" class="footer reveal-up">
-        <div class="container footer__inner">
-            <a href="tel:+917569354458" class="footer__phone">+91 7569354458</a>
-            <p class="footer__copy">&copy; 2026 AxionCo. All rights reserved.</p>
+    <!-- SECTION 6 - CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Ready to Grow Without the Guesswork?</h2>
+                <p>Tell me about your business and I'll show you exactly how we can scale your audience, automate your
+                    systems, and free up your time.</p>
+
+                <form class="contact-form">
+                    <div class="form-field">
+                        <label for="brand-name">Brand Name</label>
+                        <input type="text" id="brand-name" name="brand-name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="your-name">Your Name</label>
+                        <input type="text" id="your-name" name="your-name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="social-media">Social Media Growth</option>
+                            <option value="crm-automation">CRM & Automation</option>
+                            <option value="both">Both Services</option>
+                            <option value="consultation">General Consultation</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Let's Talk Growth</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7 - FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>AxionCo</h3>
+                    <p>Helping founders grow smarter, not harder.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#social-media">Social Media Growth</a>
+                    <a href="#crm-automation">CRM & Automation</a>
+                    <a href="#how-we-work">How We Work</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AxionCo. Built by a founder, for founders.</p>
+            </div>
         </div>
     </footer>
-
-    <!-- Mobile nav overlay -->
-    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
-        <nav class="mobile-nav">
-            <a href="#hero" class="mobile-nav__link">About</a>
-            <a href="#services" class="mobile-nav__link">Services</a>
-            <a href="#growth" class="mobile-nav__link">Growth</a>
-            <a href="#contact" class="mobile-nav__link">Contact</a>
-        </nav>
-    </div>
 
     <script src="script.js"></script>
 </body>
